@@ -11,7 +11,7 @@
 <div class="card">
 
     <div class="profile">
-        <img src="{% static 'dev1/foto.jpg' %}" alt="Foto">
+        <img src="{% static 'dev1/fotoValen.png' %}" alt="Foto">
         <h1>Valentina Aguirre</h1>
         <p class="title">Estudiante de Ingeniería de Software</p>
     </div>
