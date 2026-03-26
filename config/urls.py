@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from dev1 import views  # importa tus vistas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index_valentina, name='index'),  # tu vista principal
 ]
