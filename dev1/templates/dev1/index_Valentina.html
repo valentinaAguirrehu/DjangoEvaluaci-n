@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoja de Vida - Valentina</title>
+    <link rel="stylesheet" href="{% static 'dev1/styles.css' %}">
+</head>
+<body>
+
+<div class="card">
+
+    <div class="profile">
+        <img src="{% static 'dev1/fotoValen.png' %}" alt="Foto">
+        <h1>Valentina Aguirre</h1>
+        <p class="title">Estudiante de Ingeniería de Software</p>
+    </div>
+
+    <section>
+        <h2>💗 Datos Personales</h2>
+        <p>Email: valentina@email.com</p>
+        <p>Ciudad: Pasto, Colombia</p>
+    </section>
+
+    <section>
+        <h2>🌸 Perfil Profesional</h2>
+        <p>Soy estudiante apasionada por el desarrollo web con conocimientos en Django, HTML y CSS.</p>
+    </section>
+
+    <section>
+        <h2>🎓 Formación Académica</h2>
+        <ul>
+            <li>Ingeniería de Software - Universidad Cooperativa</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>💻 Repositorio</h2>
+        <a href="https://github.com/">Mi GitHub</a>
+    </section>
+
+</div>
+
+</body>
+</html>
