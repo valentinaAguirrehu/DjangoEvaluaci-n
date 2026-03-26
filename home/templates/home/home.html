@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Interfaz Principal - Evaluación Django</title>
+    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Interfaz Principal - Evaluación Django</h1>
+        <p>Selecciona un proyecto para ver su interfaz con CSS:</p>
+
+        <div class="dev-grid">
+            {% for dev in devs %}
+            <div class="dev-card">
+                <h2>{{ dev.name }}</h2>
+                <p>{{ dev.description }}</p>
+                <a href="{% url dev.url %}" class="btn">Ver Proyecto</a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <footer>
+            <p>Proyecto de Evaluación - Django 6.0.3</p>
+        </footer>
+    </div>
+</body>
+</html>
