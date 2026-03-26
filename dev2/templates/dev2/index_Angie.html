@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Hoja de Vida - Angie</title>
-    <link rel="stylesheet" href="/static/dev2/styles.css">
+    <link rel="stylesheet" href="{% static 'dev2/style_Angie.css' %}">
 </head>
 <body>
 
 <div class="container">
 
     <div class="card profile">
-        <img src="/static/dev2/angie.jpg" alt="Foto Angie">
+        <img src="{% static 'dev2/angie.jpg' %}" alt="Foto Angie">
         <h1>Angie 💖</h1>
         <p>Desarrolladora Web en formación</p>
     </div>
