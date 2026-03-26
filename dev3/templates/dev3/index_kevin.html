@@ -1,9 +1,10 @@
+{% load static %}
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Portafolio Kevin</title>
-    <!-- <link rel="stylesheet" href="style/portafolio-kevin.css" /> -->
+    <link rel="stylesheet" href="{% static 'dev3/styles.css' %}" />
   </head>
 
   <body>
@@ -15,7 +16,7 @@
       <!-- TARJETA PERFIL -->
 
       <section class="perfil">
-        <!-- <img src="assets/fotoKevin.jpg" alt="Kevin Yamid" /> -->
+        <img src="{% static 'dev3/fotoKevin.jpg' %}" alt="Kevin Yamid" />
 
         <h2>Kevin Yamid</h2>
 
