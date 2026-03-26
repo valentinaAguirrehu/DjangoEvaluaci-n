@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def index_Dania(request):
+    return render(request, 'dev4_Dania/index_Dania.html')
