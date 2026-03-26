@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+# Vista para la página principal
+def index(request):
+    return render(request, 'dev3/index_kevin.html')
