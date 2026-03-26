@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def index_Angie(request):
+    return render(request, 'dev2/index_Angie.html')
