@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 from dev1 import views as dev1_views
 from dev2 import views as dev2_views
-from dev3 import views as dev3_views
 from dev4_Dania import views as dev4_views
 
 urlpatterns = [
@@ -26,6 +25,5 @@ urlpatterns = [
     path('', include('home.urls')),  # página principal
     path('dev1/', dev1_views.index_valentina, name='dev1'),
     path('dev2/', dev2_views.index_Angie, name='dev2'),
-    path('dev3/', dev3_views.index_Kevin, name='dev3'),
     path('dev4/', dev4_views.index_Dania, name='dev4'),
 ]
